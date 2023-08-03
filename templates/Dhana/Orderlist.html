@@ -1,0 +1,15 @@
+{% include 'base.html' %}
+
+{% block content %}
+
+    <h1>Order Database</h1>
+    <h1>Order list</h1>
+    {% for object in object_list %}
+    Name         :{{ object.name}}<br>
+    quantity     :{{ object.quantity}} <br>
+    price        : {{object.price}}<br>
+    availability : {{object.availability}}<br>  
+
+    {% endfor %}
+
+{% endblock %}
